@@ -60,78 +60,18 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "image-0": {
-          "type": "image",
-          "settings": {
-            "position": "1",
-            "image_second_menu": false,
-            "aspect_ratio": 1,
-            "wide_image": false,
-            "title": "",
-            "heading_size": 100,
-            "link_text": "",
-            "link": ""
-          }
-        },
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "position": "1",
-            "image_second_menu": false,
-            "aspect_ratio": 1,
-            "wide_image": false,
-            "title": "",
-            "heading_size": 100,
-            "link_text": "",
-            "link": ""
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "position": "1",
-            "image_second_menu": false,
-            "aspect_ratio": 1,
-            "wide_image": false,
-            "title": "",
-            "heading_size": 100,
-            "link_text": "",
-            "link": ""
-          }
-        },
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "position": "1",
-            "image_second_menu": false,
-            "aspect_ratio": 1,
-            "wide_image": false,
-            "title": "",
-            "heading_size": 100,
-            "link_text": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image-0",
-        "image-1",
-        "image-2",
-        "image-3"
-      ],
       "settings": {
         "sticky_header": true,
-        "header_border": true,
+        "header_border": false,
         "link_hover_effect": "line",
-        "logo_not_home": "shopify://shop_images/Zoo-removebg-preview.png",
-        "logo_max_width": 160,
-        "main-menu": "main-menu",
+        "logo_not_home": "shopify://shop_images/download.svg",
+        "logo_max_width": 80,
+        "main-menu": "test",
         "main_menu_secondary": "",
         "show_images": false,
         "image_aspect_ratio": 1,
-        "menu_alignment": "left",
-        "header_icons_as_text": false,
+        "menu_alignment": "right",
+        "header_icons_as_text": true,
         "highlight_item": "Sale",
         "enable_custom_badge": false,
         "custom_badge_text": "10% OFF",
