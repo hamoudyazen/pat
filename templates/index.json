@@ -15,6 +15,8 @@
         "section-slideshow-0-block-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/pexels-cottonbro-4056475.jpg",
+            "image_mobile": "shopify://shop_images/active_status_all_ad_type_all_country_US_q_automatic20_sort_data_direction_desc_sort_data_mode_relevancy_monthly_grouped_search_type_keyword_unordered_media_type_all1_480x480_e5276ae0.webp",
             "overlay_opacity": 10,
             "text_width": "narrow",
             "text_position": "left",
