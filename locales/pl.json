@@ -145,5 +145,54 @@
       "clear_tags": "Wyczyść wszystko",
       "read_more": "Przeczytaj więcej"
     }
+  },
+  "recipient": {
+    "form": {
+      "email_label": "Adres e-mail odbiorcy",
+      "email": "Adres e-mail odbiorcy",
+      "name_label": "Nazwa odbiorcy (opcjonalnie)",
+      "name": "Nazwa odbiorcy (opcjonalnie)",
+      "message_label": "Wiadomość (opcjonalnie)",
+      "message": "Wiadomość (opcjonalnie)",
+      "max_characters": "Maksymalnie {{ max_chars }} znaków",
+      "error_heading": "Proszę dostosować następujące elementy:",
+      "send_on": "RRRR-MM-DD",
+      "send_on_label": "Wyślij dalej (opcjonalnie)"
+    }
+  },
+  "countdown": {
+    "heading": "Zrób zakupy zanim się skończy.",
+    "ends": "Kończy się",
+    "days": "Dni",
+    "hours": "Godziny",
+    "minutes": "Protokół",
+    "seconds": "Towary drugiej jakości"
+  },
+  "footer": {
+    "socials": {
+      "title": "Wyświetl {{ shop_name }} w {{ social }}"
+    },
+    "country": "Kraj",
+    "language": "Język",
+    "update": "Aktualizacja",
+    "powered_by": "Zasilane przez"
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Wyświetl informacje o sklepie",
+      "check_other_stores": "Sprawdź dostępność w innych sklepach",
+      "pick_up_available": "Możliwość odbioru osobistego",
+      "pick_up_currently_unavailable": "Odbiór obecnie niedostępny",
+      "pick_up_available_at_html": "Odbiór możliwy w <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Odbiór obecnie niedostępny w <strong>{{ location_name }}</strong>"
+    }
+  },
+  "slideshow": {
+    "previous": "Poprzedni",
+    "next": "Następny",
+    "scroll_down": "Przewiń w dół"
+  },
+  "video": {
+    "play_bg_video": "Odtwórz wideo w tle"
   }
 }
