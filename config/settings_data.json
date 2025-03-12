@@ -511,5 +511,11 @@
       "checkout_button_color": "#000000",
       "checkout_error_color": "#d02e2e"
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".site-header--nav-bold .navlink {font-weight: 400 !important;}",
+      ".site-header--nav-bold .navlink:hover {font-weight: 700 !important;}"
+    ]
   }
 }
