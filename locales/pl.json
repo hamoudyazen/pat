@@ -7,4 +7,143 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{}
+{
+  "general": {
+    "ie11_support_message": "Ta strona ma ograniczone wsparcie dla Twojej przeglądarki. Zalecamy przejście na Edge, Chrome, Safari lub Firefox.",
+    "swatches": {
+      "color": "Kolor, kolor",
+      "color_variant": "wariant kolorystyczny",
+      "more_colors": "+ {{ number }} więcej"
+    },
+    "siblings": {
+      "label": "Kolor",
+      "swatches": "Kolor, kolor"
+    },
+    "size_chart": {
+      "button": "Przewodnik po rozmiarach",
+      "size": "Rozmiar"
+    },
+    "accessibility": {
+      "skip_to_content": "Przejdź do treści",
+      "select_variant": "Wybierz wariant z listy rozwijanej",
+      "show_submenu": "Pokaż podmenu",
+      "product": "Produkt",
+      "show_products": "Pokaż produkty",
+      "hide_products": "Ukryj produkty",
+      "dismiss": "Odrzucać",
+      "close": "Zamknąć",
+      "close_drawer": "Zamknąć",
+      "close_search_bar": "Zamknij pasek wyszukiwania",
+      "open_search_bar": "Otwórz pasek wyszukiwania",
+      "submit_search_request": "Prześlij swoje żądanie wyszukiwania",
+      "search-field": "Wyszukaj pole tekstowe",
+      "mobile_menu_toggle": "Otwórz menu nawigacyjne",
+      "open_cart": "Otwórz koszyk",
+      "increase": "Zwiększ ilość",
+      "decrease": "Zmniejsz ilość",
+      "submit_email": "Składać",
+      "subscribe_to_newsletter": "Zapisz się do naszego newslettera",
+      "link_copied": "Link skopiowany",
+      "logo_image": "Obraz logo",
+      "unit_price_separator": "za",
+      "my_account": "Moje konto",
+      "view": "Pogląd",
+      "product_image_lightbox": "Otwórz lightbox obrazów",
+      "close_form_message": "Zamknij wiadomość z podziękowaniami",
+      "scroll_to_top": "Przewiń do góry",
+      "quick_tip": "Szybka wskazówka"
+    },
+    "meta": {
+      "tags": "Oznaczono „ {{ tags }} ”",
+      "page": "Strona {{ page }}"
+    },
+    "404": {
+      "subtext_html": "Ta strona nie istnieje.",
+      "button_text": "Powrót do strony głównej"
+    },
+    "newsletter_form": {
+      "heading": "Biuletyn",
+      "name": "Twoje imię",
+      "first_name": "Imię",
+      "last_name": "Nazwisko",
+      "email": "Twój e-mail",
+      "email_label": "Podaj swój adres e-mail, a powiadomimy Cię, gdy wybrany przez Ciebie przedmiot będzie dostępny.",
+      "sign_up": "Zapisać się",
+      "notify": "Powiadom mnie",
+      "notification_success": "Twój e-mail został odebrany.",
+      "newsletter_success": "Dziękujemy za zapisanie się!",
+      "newsletter_error": "Adres e-mail jest nieprawidłowy lub już zajęty.",
+      "newsletter_product_availability": "Powiadom mnie, gdy będzie dostępny"
+    },
+    "cookies": {
+      "title": "Czy możemy przechowywać ciasteczka?",
+      "cookies_link": "ciastka",
+      "text_html": "Palo Alto wykorzystuje {{ cookies }} w celu usprawnienia przeglądania witryny.",
+      "accept": "OK",
+      "decline": "Nie, dziękuję"
+    },
+    "search": {
+      "title": "Wyszukaj produkty na naszej stronie",
+      "search": "Szukaj",
+      "no_results": "Brak wyników dla „ {{ terms }} ”",
+      "results_for": "Wyniki dla „ {{ terms }} ”",
+      "results_with_count": {
+        "one": "{{ count }} wynik",
+        "other": "{{ count }} wyników"
+      },
+      "results_pages_and_blogs_with_count": {
+        "one": "{{ count }} strona",
+        "other": "{{ count }} stron i wpisów na blogu"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} produkt",
+        "other": "{{ count }} produktów"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} sugestia",
+        "other": "{{ count }} sugestii"
+      },
+      "submit": "Szukaj",
+      "placeholder": "Przeszukaj nasz sklep",
+      "view_all_results": "Zobacz wszystkie wyniki",
+      "quick_tip": "Wciśnij enter",
+      "browse_categories": "Przeglądaj kategorie",
+      "popular_searches": "Sugerowane terminy wyszukiwania",
+      "products": "Produkty",
+      "articles": "Blogi",
+      "pages": "Strony",
+      "suggestions": "Sugestie",
+      "pages_and_blogs": "Strony i wpisy na blogu",
+      "search_actions": "Akcje wyszukiwania"
+    },
+    "pagination": {
+      "previous": "Poprzednia strona",
+      "next": "Następna strona",
+      "current_page": "Strona {{ current }} z {{ total }}",
+      "shop_the_look_quick_view": "Produkt {{ current }} z {{ total }}"
+    },
+    "upsell": {
+      "out_of_stock": "Brak w magazynie",
+      "error_info": "Wybierz produkty z ustawienia bloku Upsell",
+      "error_no_product": "Nie wybrano żadnego produktu upsellingowego",
+      "pair_products": "Kup to z",
+      "quick_view": "Szybki zakup",
+      "add_to_cart": "Dodaj do koszyka"
+    },
+    "complementary": {
+      "products_title": "Dobrze komponuje się z",
+      "pair_products": "Kupione razem"
+    }
+  },
+  "blogs": {
+    "article": {
+      "by_author": "Przez {{ author }}",
+      "older_post": "Starszy post",
+      "newer_post": "Nowszy post",
+      "tags": "Tagi",
+      "filter_by_tags": "Filtruj według tagów",
+      "clear_tags": "Wyczyść wszystko",
+      "read_more": "Przeczytaj więcej"
+    }
+  }
+}
