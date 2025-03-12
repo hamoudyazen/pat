@@ -459,7 +459,7 @@
         "section-collection-0-block-0"
       ],
       "settings": {
-        "collection": "shopify-themes",
+        "collection": "frontpage",
         "products_layout": "carousel",
         "number_of_products": 8,
         "products_per_row_on_desktop": 4,
@@ -929,9 +929,9 @@
         "heading_size": 120,
         "text_size": 100,
         "bg_color": "",
-        "text_color": "#333",
+        "text_color": "#333333",
         "box_color": "",
-        "color_border": "#333",
+        "color_border": "#333333",
         "button_text": "",
         "button_link": "",
         "button_color": "btn--black",
