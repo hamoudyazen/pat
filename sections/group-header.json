@@ -37,6 +37,7 @@
       "block_order": [
         "announcement-0"
       ],
+      "disabled": true,
       "settings": {
         "width": "wrapper--full",
         "layout": "marquee",
@@ -64,7 +65,7 @@
         ".site-header--nav-right .nav--default {justify-content: space-between;}",
         ".menu__items {padding-left: 100px;}",
         ".parent .header__dropdown {top: 100%; min-width: 1400px; max-width: 100%; background: red; position: absolute; width: 1000px; position: absolute; left: 0; display: flex;}",
-        ".parent .header__dropdown__inner {display: flex; flex-direction: column; display: flex!important; padding: 0 2px 10px !important; flex-direction: row !important; align-items: center !important; justify-content: center !important;}"
+        ".parent .header__dropdown__inner {display: flex; flex-direction: column; display: flex !important; padding: 0 2px 10px !important; flex-direction: row !important; align-items: center !important; justify-content: center !important;}"
       ],
       "settings": {
         "sticky_header": true,
