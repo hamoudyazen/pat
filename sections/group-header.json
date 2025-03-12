@@ -60,6 +60,10 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".site-header--nav-right .nav--default {justify-content: space-between;}",
+        ".menu__items{padding-left:100px;}"
+      ],
       "settings": {
         "sticky_header": true,
         "header_border": false,
