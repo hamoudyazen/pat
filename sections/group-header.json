@@ -62,7 +62,8 @@
       "type": "header",
       "custom_css": [
         ".site-header--nav-right .nav--default {justify-content: space-between;}",
-        ".menu__items{padding-left:100px;}"
+        ".menu__items {padding-left: 100px;}",
+        ".parent .header__dropdown {top: 100%; min-width: 1400px; max-width: 100%; background: red; position: absolute; width: 1000px; position: absolute; left: 0; display:flex;}"
       ],
       "settings": {
         "sticky_header": true,
