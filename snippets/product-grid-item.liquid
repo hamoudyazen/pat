@@ -613,7 +613,50 @@
     {%- endunless -%}
 
     {%- if has_colors -%}
-   ss
+   <product-grid-item-swatch class="product-grid-item__swatch
+        {%- if settings.color_swatches_product_style == 'rectangle' %} product-grid__swatch--rectangle{% endif %}"
+        data-swatch-handle="{{ product.handle }}"
+        data-swatch-label="Size">
+        {%- for option in size_option -%}
+          {%- liquid
+            for variant in product.variants
+              if variant.options contains option
+                assign swatch_variant = variant
+                break
+              endif
+            endfor
+
+            assign swatch_image_src = swatch_variant.featured_media.preview_image.src
+            if swatch_image_src
+              assign swatch_image_src = swatch_image_src | image_url: width: 600 | replace: '&width=600', ''
+            else
+              assign swatch_image_src = ''
+            endif
+          -%}
+
+          <div class="swatch__button{%- if forloop.index > 4 and size_option.size > 5 %} is-hidden{% endif -%}" data-swatch-button data-value="{{ option }}" data-tooltip="{{ option | escape_once | capitalize }}">
+            <div id="{{ product.id }}-{{ swatch_variant.id }}-{{ option | handle }}"
+              class="swatch__label"
+              data-swatch="{{ option }}"
+              data-swatch-variant="{{ swatch_variant.id }}"
+              data-swatch-image="{{ swatch_image_src }}"
+              data-swatch-image-id="{{ swatch_variant.featured_media.id | default: '' }}"
+              data-swatch-index="{{ forloop.index0 }}">
+              {{ option }}
+            </div>
+            {%- assign size_variant_text = 'general.swatches.size_variant' | t -%}
+            {%- assign swatch_product_title = product.title | strip_html | escape -%}
+            <a href="{{ product.url }}?variant={{ swatch_variant.id }}" data-swatch-variant="{{ swatch_variant.id }}" data-deferred-trigger-element class="swatch__link">{{ swatch_product_title | append: ' - ' | append: size_variant_text | append: ': ' | append: option }}</a>
+          </div>
+        {%- endfor -%}
+
+        {%- if size_option.size > 5 -%}
+          {%- assign more_sizes = size_option.size | minus: 4 -%}
+
+          <button type="button" class="swatch__text-more" data-swatches-more>{{ 'general.swatches.more_sizes' | t: number: more_sizes }}</button>
+        {%- endif -%}
+      </product-grid-item-swatch>
+
     {%- endif -%}
   </div>
 </div>
