@@ -1,0 +1,180 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading": "none",
+            "title_size": 100,
+            "price_size": 100,
+            "bold_price": false,
+            "padding_bottom": 20
+          }
+        },
+        "divider_6CtT4j": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 10
+          }
+        },
+        "text_QTkQXd": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Free shipping in US for orders over $200 USD. Exclusions apply.</p>",
+            "text_alignment": "left",
+            "padding_bottom": 20
+          }
+        },
+        "divider_hT8iHi": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 10
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "show_labels": false,
+            "show_quantity": false,
+            "show_payment_button": true,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "divider_W8iTbJ": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 10
+          }
+        },
+        "product_accordion_KnJcY6": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Details",
+            "heading_style": "font-body",
+            "accordion_text": "{{ product.description }}",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_TbR9NT": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "SIZE GUIDE",
+            "heading_style": "font-body",
+            "accordion_text": "{{ product.description }}",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_BptqhB": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "SHIPPING & RETURNS",
+            "heading_style": "font-body",
+            "accordion_text": "{{ product.description }}",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_hLU6te": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "STYLED WITH",
+            "heading_style": "font-body",
+            "accordion_text": "{{ product.description }}",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_eLYr4W": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "CHAT",
+            "heading_style": "font-body",
+            "accordion_text": "<p>{{ product.description }}</p>",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "divider_6CtT4j",
+        "text_QTkQXd",
+        "divider_hT8iHi",
+        "form",
+        "divider_W8iTbJ",
+        "product_accordion_KnJcY6",
+        "product_accordion_TbR9NT",
+        "product_accordion_BptqhB",
+        "product_accordion_hLU6te",
+        "product_accordion_eLYr4W"
+      ],
+      "settings": {
+        "product_sticky_enable": false,
+        "image_layout": "stacked",
+        "image_width": "standard",
+        "product_image_aspect_ratio": true,
+        "enable_zoom": false,
+        "enable_video_looping": false,
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "related": {
+      "type": "related-products",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "title": "You May Also Like",
+            "product_recommendations_limit": 4
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "title": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_tabs": true,
+        "columns_mobile": "1",
+        "type_style": "subheading-text",
+        "tab_heading_size": 120,
+        "bg_color": "",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related"
+  ]
+}
