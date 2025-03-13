@@ -618,15 +618,24 @@
         data-swatch-handle="{{ product.handle }}"
         data-swatch-label="Size">
     <style>
-      .product-grid-item__swatch{
-        opacity:0;
-        visibility:hidden;
-      }
-        .product-grid-item:hover .product-grid-item__swatch {
-            opacity: 1;
-            visibility: visible;
-        }
-      
+    .product-grid-item__swatch {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -20px); /* Start position slightly above */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+    display: flex;
+    gap: 5px;
+}
+
+.product-grid-item:hover .product-grid-item__swatch {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0); /* Moves into position smoothly */
+}
+
         .swatch__button {
             display: inline-block;
             width: 20px;
