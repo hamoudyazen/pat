@@ -482,7 +482,6 @@
               {% if toggle_state %}style="height:auto;"{% endif %}>
               <ul class="{{ filters_list_class }}" data-collapsible-content>
                 {%- for tag in collection.all_tags -%}
-                  ss
                   {%- liquid
                     assign tag_parts = tag | split: '_'
                     assign group_tag = tag_parts.last
