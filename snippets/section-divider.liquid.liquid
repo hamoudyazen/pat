@@ -17,12 +17,10 @@
   class="divider-section {{ section_width }}"
   data-section-id="{{ section.id }}"
   data-section-type="divider">
-  {%- if section.settings.show_line -%}
     <hr class="hr--full"
       {% if animations_enabled %}
         data-aos="fade-up"
         data-aos-anchor="{{ animation_anchor }}"
         data-aos-delay="{{ animation_delay }}"
-      {% endif %}>
   {%- endif -%}
 </section>
