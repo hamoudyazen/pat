@@ -613,21 +613,36 @@
     {%- endunless -%}
 
    
-<product-grid-item-swatch class="product-grid-item__swatch
-        {%- if settings.color_swatches_product_style == 'rectangle' %} product-grid__swatch--rectangle{% endif %}"
+<product-grid-item-swatch class="product-grid-item__swatch"
         data-swatch-handle="{{ product.handle }}"
         data-swatch-label="Size">
     <style>
+        .product-grid-item__swatch {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            display: flex;
+            gap: 5px;
+        }
+
+        .product-grid-item:hover .product-grid-item__swatch {
+            opacity: 1;
+            visibility: visible;
+        }
+
         .swatch__button {
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 0px solid #ccc;
+            width: 35px;
+            height: 35px;
+            border: 2px solid #ccc;
             text-align: center;
-            line-height: 40px;
+            line-height: 35px;
             font-size: 14px;
             font-weight: 500;
-            margin: 5px;
             cursor: pointer;
             transition: all 0.3s ease;
             border-radius: 4px;
@@ -657,8 +672,7 @@
 
         <a href="{{ product.url }}?variant={{ swatch_variant.id }}" class="swatch__button" 
             data-swatch-button 
-            data-value="{{ option }}" 
-            >
+            data-value="{{ option }}">
             {{ option }}
         </a>
     {%- endfor -%}
@@ -670,6 +684,7 @@
         </button>
     {%- endif -%}
 </product-grid-item-swatch>
+
 
 
   </div>
