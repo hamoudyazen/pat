@@ -612,7 +612,7 @@
       {{ product_info_price }}
     {%- endunless -%}
 
-    {%- if has_colors -%}
+   
    <product-grid-item-swatch class="product-grid-item__swatch
         {%- if settings.color_swatches_product_style == 'rectangle' %} product-grid__swatch--rectangle{% endif %}"
         data-swatch-handle="{{ product.handle }}"
@@ -657,6 +657,5 @@
         {%- endif -%}
       </product-grid-item-swatch>
 
-    {%- endif -%}
   </div>
 </div>
