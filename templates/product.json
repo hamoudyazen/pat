@@ -22,98 +22,53 @@
             "padding_bottom": 20
           }
         },
-        "inventory_countdown": {
-          "type": "inventory_countdown",
+        "divider_6CtT4j": {
+          "type": "divider",
           "settings": {
-            "max_inventory": 10,
-            "hide_inventory_count": true,
+            "show_line": true,
+            "padding_bottom": 10
+          }
+        },
+        "text_QTkQXd": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Free shipping in US for orders over $200 USD. Exclusions apply.</p>",
+            "text_alignment": "left",
             "padding_bottom": 20
+          }
+        },
+        "divider_hT8iHi": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 10
           }
         },
         "form": {
           "type": "form",
           "settings": {
-            "show_labels": true,
-            "show_quantity": true,
+            "show_labels": false,
+            "show_quantity": false,
             "show_payment_button": true,
             "enable_subscriptions_selectors": true,
             "padding_bottom": 20
           }
         },
-        "7ddd2db6-1d92-43ee-a7d9-e786662f9ced": {
-          "type": "icon",
+        "divider_W8iTbJ": {
+          "type": "divider",
           "settings": {
-            "icon_name": "eco-friendly",
-            "icon_color": "#fe0000",
-            "icon_width": 20,
-            "icon_text": "SHOP AT WWW.TRIKRU.CO",
-            "text_size": 90,
-            "width": "full",
-            "text_alignment": "center",
-            "bg_color": "",
-            "padding_bottom": 20
-          }
-        },
-        "product_accordion": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "Materials and specs",
-            "heading_style": "font-body",
-            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
-            "accordion_page": "",
+            "show_line": true,
             "padding_bottom": 10
-          }
-        },
-        "9927e90d-2ecb-4104-af67-0dadf75b2a0a": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "Shipping and returns",
-            "heading_style": "font-body",
-            "accordion_text": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>",
-            "accordion_page": "",
-            "padding_bottom": 10
-          }
-        },
-        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9": {
-          "type": "feature",
-          "settings": {
-            "icon_name": "support",
-            "icon_width": 25,
-            "title": "Need help with this theme ?",
-            "text": "<p>VISIT OUR WEBSITE WWW.TRIKRU.CO FOR MORE THEMES </p>",
-            "bg_color": "#fe0000",
-            "text_color": "#ffffff",
-            "padding_bottom": 20
-          }
-        },
-        "upsell": {
-          "type": "upsell",
-          "settings": {
-            "product_list": [
-              "3d-spinning-logo",
-              "custom-website-design-animated-background-3d-logo",
-              "3d-spinning-360-clothing-realistic"
-            ],
-            "padding_bottom": 20
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "padding_bottom": 20
           }
         }
       },
       "block_order": [
         "title",
-        "inventory_countdown",
+        "divider_6CtT4j",
+        "text_QTkQXd",
+        "divider_hT8iHi",
         "form",
-        "7ddd2db6-1d92-43ee-a7d9-e786662f9ced",
-        "product_accordion",
-        "9927e90d-2ecb-4104-af67-0dadf75b2a0a",
-        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
-        "upsell",
-        "description"
+        "divider_W8iTbJ"
       ],
       "settings": {
         "product_sticky_enable": false,
