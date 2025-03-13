@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "section_custom_html_ayF7xV": {
+      "type": "section-custom-html",
+      "custom_css": [
+        ".parent .header__dropdown {border-bottom: 1px solid #f5f5f5; top: 100%; min-width: 1400px; max-width: 100%; background: white; position: absolute; width: 1000px; position: absolute; left: 0; display: flex; padding-left:20px;}"
+      ],
+      "settings": {
+        "custom_code": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "section_icons_row_iHNAdm": {
       "type": "section-icons-row",
       "blocks": {
@@ -81,7 +93,7 @@
         "text_color": "text-light",
         "title": "",
         "heading_highlight_type": "underline-hand-drawn",
-        "highlight_color": "#000",
+        "highlight_color": "#000000",
         "highlight_text_color": "",
         "text": "",
         "heading_size": 100,
@@ -94,6 +106,7 @@
     }
   },
   "order": [
+    "section_custom_html_ayF7xV",
     "section_icons_row_iHNAdm",
     "section_video_qi6EQh"
   ]
