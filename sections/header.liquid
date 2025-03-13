@@ -238,7 +238,7 @@
 
   assign link_hover_dot = false
   if section.settings.link_hover_effect == 'dot'
-    assign link_hover_dot = true
+    assign link_hover_dot = false
 
     if header_icons_as_text
       assign summary_classes = summary_classes | append: ' navlink--dot'
