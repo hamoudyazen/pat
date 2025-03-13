@@ -286,6 +286,45 @@
               classes: 'product__media product__media--featured-visible' -%}
 
             {%- if has_colors -%}
+              <template>
+                <div data-deferred-content>
+                  {%- for option in color_option -%}
+                    {%- liquid
+                      for variant in product.variants
+                        if variant.options contains option
+                          assign swatch_variant = variant
+                          break
+                        endif
+                      endfor
+                    -%}
+                    {%- if swatch_variant.featured_image != blank -%}
+                      {%- capture image_variant_attributes -%}
+                        data-grid-image
+                        data-variant-id="{{ swatch_variant.id }}"
+                      {%- endcapture -%}
+                      {%- capture image_secondary_variant_attributes -%}
+                        data-variant-secondary-id="{{ swatch_variant.id }}"
+                      {%- endcapture -%}
+                      {%- render 'image-fill',
+                        cover: image_cover,
+                        is_background: true,
+                        img_object: swatch_variant.featured_image,
+                        image_attributes: image_variant_attributes,
+                        sizes: sizes,
+                        aspect_ratio: aspect_ratio,
+                        classes: 'product__media' -%}
+                      {%- render 'image-fill',
+                        cover: image_cover,
+                        is_background: true,
+                        img_object: swatch_variant.featured_image,
+                        image_attributes: image_secondary_variant_attributes,
+                        sizes: sizes,
+                        aspect_ratio: aspect_ratio,
+                        classes: 'product__media product__media--featured-secondary' -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                </div>
+              </template>
             {%- endif -%}
 
             <span class="visually-hidden">{{ image.alt | default: product.title | strip_html | escape }}</span>
@@ -345,33 +384,7 @@
               classes: 'product__media__hover-img product__media__hover-img--visible product__media' -%}
 
             {%- if has_colors -%}
-              <template>
-                <div data-deferred-content>
-                  {%- for variant in product.variants -%}
-                    {%- assign featured_image_index = variant.featured_image.position -%}
-                    {%- if featured_image_index > 1 -%}
-                      {%- assign swatch_image_hover = product.media[featured_image_index].preview_image -%}
-                      {%- if swatch_image_hover -%}
-                        {%- capture image_attributes -%}
-                          data-variant-id="{{ variant.id }}"
-                          data-product-image-hover
-                        {%- endcapture -%}
-
-                        {%- render 'image-fill',
-                          cover: image_cover,
-                          is_background: true,
-                          img_object: swatch_image_hover,
-                          image_attributes: image_attributes,
-                          sizes: sizes,
-                          loading: 'eager',
-                          aspect_ratio: aspect_ratio,
-                          classes: 'product__media product__media__hover-img' -%}
-                      {%- endif -%}
-                    {%- endif -%}
-                  {%- endfor -%}
-                </div>
-              </template>
-            {%- endif -%}
+ss            {%- endif -%}
           </deferred-loading>
         {%- endif -%}
       </a>{%- liquid
