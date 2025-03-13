@@ -102,7 +102,7 @@
     "saving_bg_color": "#fe0000",
     "saving_badge_type": "money",
     "color_swatches_type": "theme",
-    "color_swatches_product_style": "rectangle",
+    "color_swatches_product_style": "circle",
     "enable_infinity_scroll": true,
     "suggestions_results_limit": 5,
     "suggestions_terms_limit": 10,
