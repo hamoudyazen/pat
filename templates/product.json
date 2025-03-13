@@ -60,6 +60,56 @@
             "show_line": true,
             "padding_bottom": 10
           }
+        },
+        "product_accordion_KnJcY6": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "Details",
+            "heading_style": "font-body",
+            "accordion_text": "{{ product.description }}",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_TbR9NT": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "SIZE GUIDE",
+            "heading_style": "font-body",
+            "accordion_text": "{{ product.description }}",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_BptqhB": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "SHIPPING & RETURNS",
+            "heading_style": "font-body",
+            "accordion_text": "{{ product.description }}",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_hLU6te": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "STYLED WITH",
+            "heading_style": "font-body",
+            "accordion_text": "{{ product.description }}",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion_eLYr4W": {
+          "type": "product_accordion",
+          "settings": {
+            "accordion_heading": "CHAT",
+            "heading_style": "font-body",
+            "accordion_text": "<p>{{ product.description }}</p>",
+            "accordion_page": "",
+            "padding_bottom": 20
+          }
         }
       },
       "block_order": [
@@ -68,7 +118,12 @@
         "text_QTkQXd",
         "divider_hT8iHi",
         "form",
-        "divider_W8iTbJ"
+        "divider_W8iTbJ",
+        "product_accordion_KnJcY6",
+        "product_accordion_TbR9NT",
+        "product_accordion_BptqhB",
+        "product_accordion_hLU6te",
+        "product_accordion_eLYr4W"
       ],
       "settings": {
         "product_sticky_enable": false,
