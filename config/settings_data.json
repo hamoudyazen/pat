@@ -516,7 +516,7 @@
     "custom_css": [
       ".site-header--nav-bold .navlink {font-weight: 400 !important;}",
       ".site-header--nav-bold .navlink:hover {font-weight: 700 !important;}",
-      ".navlink--toplevel>.navtext:after{display: none !important;}"
+      ".navtext:after {display: none !important;}"
     ]
   }
 }
