@@ -7,17 +7,16 @@
 -%}
 
 {%- if heading != '' and content != '' -%}
- <div class="product__accordion">
-<button class="product__accordion__title" aria-controls="ProductAccordion--page-{{ accordion_title | handle }}-{{ forloop.index }}-{{ section.id }}" data-collapsible-trigger>
-{{- accordion_title -}}
-{%- render 'icon-toggle-plus' -%}
-{%- render 'icon-toggle-minus' -%}
-</button>
-
-<div class="product__accordion__content" id="ProductAccordion--page-{{ accordion_title | handle }}-{{ forloop.index }}-{{ section.id }}" data-collapsible-container>
-<div class="product__accordion__inner rte" data-collapsible-content>
-{{- accordion_content -}}
-</div>
-</div>
-</div>
+  <div class="product__accordion">
+    <button class="product__accordion__title {{ heading_style }}" aria-controls="ProductAccordion--page-{{ heading | handle }}--{{ section.id }}--{{ block_id }}" data-collapsible-trigger>
+      {{- heading -}}
+      {%- render 'icon-toggle-plus' -%}
+      {%- render 'icon-toggle-minus' -%}
+    </button>
+    <div class="product__accordion__content" id="ProductAccordion--page-{{ heading | handle }}--{{ section.id }}--{{ block_id }}" data-collapsible-container>
+      <div class="product__accordion__inner rte" data-collapsible-content>
+        {{- content -}}
+      </div>
+    </div>
+  </div>
 {%- endif -%}
