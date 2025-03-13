@@ -15,7 +15,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "subheading": "breadcrumbs",
+            "subheading": "none",
             "title_size": 100,
             "price_size": 100,
             "bold_price": false,
