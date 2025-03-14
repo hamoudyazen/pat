@@ -1006,7 +1006,7 @@
             endcapture
           -%}
 
-          <div class="{{ selector_wrapper_class }}"
+<div class="{{ selector_wrapper_class }} {% if settings.hide_variants %}hidden{% endif %}"
             data-selector-wrapper
             data-option-position="{{ option.position }}"
             {% if animations_enabled %}
@@ -1045,7 +1045,7 @@
                   {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
                 </legend>
 
-                <div class="radio__buttons" data-variant-buttons>
+<div class="radio__buttons {% if settings.hide_variant_buttons %}hidden{% endif %}" data-variant-buttons>
                   {%- for value in option.values -%}
                     {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ option.name | escape_once }}-{{ value | handle }}{%- endcapture -%}
 
@@ -2861,7 +2861,7 @@
             endcapture
           -%}
 
-          <div class="{{ selector_wrapper_class }}"
+<div class="{{ selector_wrapper_class }} {% if settings.hide_variants %}hidden{% endif %}"
             data-selector-wrapper
             data-option-position="{{ option.position }}"
             {% if animations_enabled %}
@@ -2900,7 +2900,7 @@
                   {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
                 </legend>
 
-                <div class="radio__buttons" data-variant-buttons>
+<div class="radio__buttons {% if settings.hide_variant_buttons %}hidden{% endif %}" data-variant-buttons>
                   {%- for value in option.values -%}
                     {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ option.name | escape_once }}-{{ value | handle }}{%- endcapture -%}
 
