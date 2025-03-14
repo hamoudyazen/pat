@@ -1052,7 +1052,7 @@
                   {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
                 </legend>
 
-<div class="radio__buttons  data-variant-buttons>
+<div class="radio__buttons {% if hide_variant_buttons %}hidden{% endif %}" data-variant-buttons>
                   {%- for value in option.values -%}
                     {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ option.name | escape_once }}-{{ value | handle }}{%- endcapture -%}
 
@@ -2907,7 +2907,7 @@
                   {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
                 </legend>
 
-<div class="radio__buttons  data-variant-buttons>
+<div class="radio__buttons {% if hide_variant_buttons %}hidden{% endif %}" data-variant-buttons>
                   {%- for value in option.values -%}
                     {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ option.name | escape_once }}-{{ value | handle }}{%- endcapture -%}
 
