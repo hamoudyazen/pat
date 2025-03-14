@@ -192,19 +192,29 @@
     dropdownLinks.forEach(link => {
       link.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent navigation
+        console.log('Dropdown link clicked');  // Debug log
+        
         const dropdown = link.nextElementSibling; // Get the dropdown associated with the link
         if (dropdown && dropdown.classList.contains('header__dropdown')) {
-          // Toggle a class to handle the dropdown visibility
+          console.log('Toggling dropdown visibility'); // Debug log
+          
+          // Toggle the visibility using the 'is-visible' class
           dropdown.classList.toggle('is-visible');
+          
+          // Debug log to check the dropdown's current display style
+          console.log(dropdown.classList);
         }
       });
     });
   });
 </script>
 
+
 <style>
-  .header__dropdown {
+.header__dropdown {
   display: none;
+  /* Optional: you can also add transition for a smoother effect */
+  transition: all 0.3s ease;
 }
 
 .header__dropdown.is-visible {
