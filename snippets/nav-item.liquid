@@ -185,20 +185,41 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-  // Add event listener to all links with the data-dropdown-toggle attribute
+ document.addEventListener('DOMContentLoaded', function() {
   const dropdownLinks = document.querySelectorAll('[data-dropdown-toggle="true"]');
   
   dropdownLinks.forEach(link => {
+    const dropdown = link.nextElementSibling; // Get the dropdown
+
     link.addEventListener('click', function(event) {
       event.preventDefault(); // Prevent navigation
-      const dropdown = link.nextElementSibling; // Get the dropdown associated with the link
-      if (dropdown && dropdown.classList.contains('header__dropdown')) {
-        // Toggle the visibility of the dropdown
-        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+
+      // Toggle the dropdown visibility
+      if (dropdown) {
+        const isVisible = dropdown.style.display === 'block';
+        dropdown.style.display = isVisible ? 'none' : 'block';
+      }
+    });
+
+    // Ensure the dropdown is hidden on hover
+    link.addEventListener('mouseenter', function() {
+      if (dropdown) {
+        dropdown.style.display = 'none';
       }
     });
   });
 });
 
 </script>
+<style>
+  /* Remove hover styles that display the dropdown */
+.menu__item:hover .header__dropdown {
+  display: none !important;
+}
+
+/* Ensure the dropdown only shows when clicked */
+.header__dropdown {
+  display: none; /* Start with the dropdown hidden */
+}
+
+</style>
