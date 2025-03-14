@@ -11,6 +11,35 @@
   "type": "header",
   "name": "Header",
   "sections": {
+    "header": {
+      "type": "header",
+      "custom_css": [
+        ".site-header--nav-right .nav--default {justify-content: space-between; border-bottom: 1px solid #f5f5f5;}",
+        ".menu__items {padding-left: 100px;}",
+        ".parent .header__dropdown__inner {display: flex; flex-direction: column; display: flex !important; padding: 0 2px 10px !important; flex-direction: row !important; align-items: center !important; justify-content: center !important;}",
+        ".wrapper {border-bottom: 1px solid #f5f5f5;}"
+      ],
+      "settings": {
+        "sticky_header": true,
+        "header_border": false,
+        "link_hover_effect": "line",
+        "logo_not_home": "shopify://shop_images/download.svg",
+        "logo_max_width": 80,
+        "main-menu": "test",
+        "main_menu_secondary": "",
+        "show_images": false,
+        "image_aspect_ratio": 1,
+        "menu_alignment": "right",
+        "header_icons_as_text": true,
+        "highlight_item": "Sale",
+        "enable_custom_badge": false,
+        "custom_badge_text": "10% OFF",
+        "highlight_item_color": "#d02e2e",
+        "header_transparent": false,
+        "header_text_color": "white",
+        "header_gradient": true
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -58,39 +87,10 @@
         "color": "#ffffff",
         "border_color": "#ffffff"
       }
-    },
-    "header": {
-      "type": "header",
-      "custom_css": [
-        ".site-header--nav-right .nav--default {justify-content: space-between; border-bottom: 1px solid #f5f5f5;}",
-        ".menu__items {padding-left: 100px;}",
-        ".parent .header__dropdown__inner {display: flex; flex-direction: column; display: flex !important; padding: 0 2px 10px !important; flex-direction: row !important; align-items: center !important; justify-content: center !important;}",
-        ".wrapper {border-bottom: 1px solid #f5f5f5;}"
-      ],
-      "settings": {
-        "sticky_header": true,
-        "header_border": false,
-        "link_hover_effect": "line",
-        "logo_not_home": "shopify://shop_images/download.svg",
-        "logo_max_width": 80,
-        "main-menu": "test",
-        "main_menu_secondary": "",
-        "show_images": false,
-        "image_aspect_ratio": 1,
-        "menu_alignment": "right",
-        "header_icons_as_text": true,
-        "highlight_item": "Sale",
-        "enable_custom_badge": false,
-        "custom_badge_text": "10% OFF",
-        "highlight_item_color": "#d02e2e",
-        "header_transparent": false,
-        "header_text_color": "white",
-        "header_gradient": true
-      }
     }
   },
   "order": [
-    "announcement-bar",
-    "header"
+    "header",
+    "announcement-bar"
   ]
 }

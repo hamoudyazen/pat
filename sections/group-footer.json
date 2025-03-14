@@ -14,8 +14,9 @@
     "footer": {
       "type": "footer",
       "custom_css": [
-        ".footer-bottom {display:none;}",
-        ".footer {position: relative;}"
+        ".footer-bottom {display: none;}",
+        ".footer {position: relative;}",
+        "#SiteFooter{display:none;}"
       ],
       "settings": {
         "show_footer_wave": false,
