@@ -111,7 +111,7 @@
     "color_swatches_type": "theme",
     "color_swatches_product_style": "circle",
     "enable_infinity_scroll": true,
-    "suggestions_results_limit": 5,
+    "suggestions_results_limit": 10,
     "suggestions_terms_limit": 10,
     "social_instagram_link": "https://www.instagram.com/shopify",
     "social_tiktok_link": "https://tiktok.com/@shopify",
