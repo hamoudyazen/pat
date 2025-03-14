@@ -16,17 +16,18 @@
 -%}
 
 
-  <div class="predictive-search__product-image">
+<div class="predictive-search__product-image">
+  <a href="{{ product.url }}">
     {%- render 'image',
-       href="{{ product.url }}
-      image: featured_image,
-      width: render_image_width,
-      widths: image_widths,
-      sizes: '100vw',
-      cover: true,
-      placeholder_svg: 'product-apparel-1',
-      preload: true -%}
-  </div>
-
+       image: featured_image,
+       width: render_image_width,
+       widths: image_widths,
+       sizes: '100vw',
+       cover: true,
+       placeholder_svg: 'product-apparel-1',
+       preload: true
+    -%}
+  </a>
+</div>
 
 
