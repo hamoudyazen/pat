@@ -120,7 +120,7 @@
         ".hidden {display: none !important;}",
         ".product__block {border-bottom: 1px solid #f5f5f5 !important; padding-top: 20px; padding-bottom: 20px;}",
         ".section-padding {padding: 0px !important;}",
-        ".wrapper {width: 100%; max-width: 100%; margin: 0px !important; padding: 0px !important;}"
+        ".wrapper {width: 100%; max-width: 100%; margin: 0px !important; padding: 10px !important;}"
       ],
       "settings": {
         "product_sticky_enable": true,
