@@ -140,6 +140,9 @@
         "product_accordion_eLYr4W",
         "form_QHnpEw"
       ],
+      "custom_css": [
+        ".hidden {display: none !important;}"
+      ],
       "settings": {
         "product_sticky_enable": true,
         "image_layout": "stacked",
