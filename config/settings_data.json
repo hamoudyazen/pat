@@ -52,7 +52,7 @@
     "cutline_color": "body",
     "show_product_gray_bg": true,
     "variants_style": "boxes",
-    "show_variant_image": true,
+    "show_variant_image": false,
     "variant_image_style": "inline",
     "enable_half_width_btn": true,
     "atc_show_product_price": false,
