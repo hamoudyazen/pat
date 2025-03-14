@@ -33,7 +33,7 @@
   endfor
 
   if parent or grandparent
-    assign expands = false
+    assign expands = true
     assign key = link.url | append: link.title | append: link.levels | md5
   endif
 
@@ -84,7 +84,7 @@
     role="button"
     aria-haspopup="true"
     aria-expanded="false"
-    data-hover-disclosure-toggle="dropdown-{{ key }}"
+    data-dropdown-toggle="true" 
     aria-controls="dropdown-{{ key }}"
   {% else %}
     data-hover-disclosure-toggle
@@ -200,8 +200,4 @@
     });
   });
 });
-
 </script>
-<style>
-  
-</style>
