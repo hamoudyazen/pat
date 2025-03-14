@@ -1,3 +1,12 @@
+<style>
+  .background-size-cover img, .video-background img, .img-object-cover {
+    display: block;
+    object-fit: cover !important;
+    width: 90%;
+    height: 90%;
+    min-height: 90%;
+}
+</style>
 {%- liquid
   assign featured_image = product.featured_media.preview_image
   assign render_image_width = 600
