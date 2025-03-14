@@ -295,7 +295,7 @@
 
   <div class="menu__items" data-takes-space>
     {%- for link in linklists[section.settings.main-menu].links -%}
-      {%- render 'nav-item', link: link, index: forloop.index -%}
+      {%- render 'nav-item' -%}
     {%- endfor -%}
   </div>
 
