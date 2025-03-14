@@ -534,7 +534,8 @@
       ".predictive-search__list {display: flex; width: 100%;}",
       ".predictive-search__item {width: 25%;}",
       "predictive-search__product-title {display: none;}",
-      ".predictive-search__product-image {position: relative; width: 100% !important; max-width: 100% !important; /* flex: 0 0 var(--image-size); */ height: 500px !important;}"
+      ".predictive-search__product-image {position: relative; width: 100% !important; max-width: 100% !important; /* flex: 0 0 var(--image-size); */ height: 500px !important;}",
+      ".predictive-search__product-title{display:none;}"
     ]
   }
 }
