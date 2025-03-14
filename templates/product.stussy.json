@@ -118,7 +118,7 @@
       ],
       "custom_css": [
         ".hidden {display: none !important;}",
-        ".product__block {border-bottom: 1px solid red;}"
+        ".product__block {border-bottom: 1px solid #FF0000;}"
       ],
       "settings": {
         "product_sticky_enable": true,
