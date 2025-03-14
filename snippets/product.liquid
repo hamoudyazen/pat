@@ -503,7 +503,8 @@
   {% endif %}
 </div>{%- when 'form' -%}
               {%- liquid
-                assign show_quantity = block.settings.show_quantity
+                assign hide_variant_buttons = block.settings.hide_variant_buttons
+                assign hide_variants = block.settings.hide_variants
                 assign show_payment_button = block.settings.show_payment_button
                 assign enable_subscriptions_selectors = block.settings.enable_subscriptions_selectors
                 assign hide_labels_class = ''
@@ -1012,7 +1013,7 @@
             endcapture
           -%}
 
-<div class="{{ selector_wrapper_class }} {% if settings.hide_variants %}hidden{% endif %}"
+<div class="{{ selector_wrapper_class }} {% if hide_variants %}hidden{% endif %}"
             data-selector-wrapper
             data-option-position="{{ option.position }}"
             {% if animations_enabled %}
@@ -1051,7 +1052,7 @@
                   {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
                 </legend>
 
-<div class="radio__buttons {% if settings.hide_variant_buttons %}hidden{% endif %}" data-variant-buttons>
+<div class="radio__buttons {% if hide_variant_buttons %}hidden{% endif %}" data-variant-buttons>
                   {%- for value in option.values -%}
                     {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ option.name | escape_once }}-{{ value | handle }}{%- endcapture -%}
 
@@ -2867,7 +2868,7 @@
             endcapture
           -%}
 
-<div class="{{ selector_wrapper_class }} {% if settings.hide_variants %}hidden{% endif %}"
+<div class="{{ selector_wrapper_class }} {% if hide_variants %}hidden{% endif %}"
             data-selector-wrapper
             data-option-position="{{ option.position }}"
             {% if animations_enabled %}
@@ -2906,7 +2907,7 @@
                   {%- if show_size_guide_as_label -%}{{- size_chart_button -}}{%- endif -%}
                 </legend>
 
-<div class="radio__buttons {% if settings.hide_variant_buttons %}hidden{% endif %}" data-variant-buttons>
+<div class="radio__buttons {% if hide_variant_buttons %}hidden{% endif %}" data-variant-buttons>
                   {%- for value in option.values -%}
                     {%- capture input_id -%}{{ unique }}-{{ product.id }}-{{ option.name | escape_once }}-{{ value | handle }}{%- endcapture -%}
 
