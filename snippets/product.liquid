@@ -1333,7 +1333,7 @@
       </div>
 
       {%- if show_payment_button -%}
-        <div class="product__submit__item{% if sold_out %} hidden{% endif %} {{ buynow_btn_color }} {{ buynow_btn_style }}"
+        <div class="product__submit__item{% if sold_out %} hidden{% endif %} {{ buynow_btn_color }} {{ buynow_btn_style }} {% if hide_variant_buttons %}hidden{% endif %}"
           data-buy-it-now
           {% if animations_enabled %}
             data-aos="hero"
@@ -1607,7 +1607,7 @@
 
   <div class="product__submit__holder{% if show_payment_button %} product__submit__holder--spb{% endif %} >
     <div class="product__submit__buttons">
-      <div class="product__submit__item"
+      <div class="product__submit__item {% if hide_variant_buttons %}hidden{% endif %}"
         {% if animations_enabled %}
           data-aos="hero"
           data-aos-anchor="{{ animation_anchor }}"
@@ -1622,7 +1622,7 @@
         </button>
       </div>
       {% if show_payment_button %}
-        <div class="product__submit__item"
+        <div class="product__submit__item {% if hide_variant_buttons %}hidden{% endif %}"
           {% if animations_enabled %}
             data-aos="hero"
             data-aos-anchor="{{ animation_anchor }}"
@@ -3164,7 +3164,7 @@
 
 <div class="product__submit__holder{% if show_payment_button %} product__submit__holder--spb{% endif %}"">
   <div class="product__submit__buttons">
-    <div class="product__submit__item">
+    <div class="product__submit__item {% if hide_variant_buttons %}hidden{% endif %}">
       <button
         type="submit"
         name="add"
@@ -3200,7 +3200,7 @@
     </div>
 
     {%- if show_payment_button -%}
-      <div class="product__submit__item{% if sold_out %} hidden{% endif %} {{ buynow_btn_color }} {{ buynow_btn_style }}" data-buy-it-now>
+      <div class="product__submit__item{% if sold_out %} hidden{% endif %} {{ buynow_btn_color }} {{ buynow_btn_style }} {% if hide_variant_buttons %}hidden{% endif %}" data-buy-it-now>
         {{ form | payment_button }}
       </div>
     {%- endif -%}
