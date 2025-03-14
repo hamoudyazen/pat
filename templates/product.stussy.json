@@ -141,7 +141,8 @@
         "form_QHnpEw"
       ],
       "custom_css": [
-        ".hidden {display: none !important;}"
+        ".hidden {display: none !important;}",
+        ".product__block{border-bottom:1px solid red;}"
       ],
       "settings": {
         "product_sticky_enable": true,
