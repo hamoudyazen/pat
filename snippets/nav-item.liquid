@@ -84,7 +84,7 @@
     role="button"
     aria-haspopup="true"
     aria-expanded="false"
-    data-hover-disclosure-toggle="dropdown-{{ key }}"
+    data-click-disclosure-toggle="dropdown-{{ key }}"
     aria-controls="dropdown-{{ key }}"
   {% else %}
     data-hover-disclosure-toggle
@@ -95,5 +95,107 @@
       <span class="navtext__custom-badge">{{ custom_badge_text }}</span>
     {%- endif -%}
   </a>
+  {%- if expands -%}
+    <div class="header__dropdown"
+      data-click-disclosure
+      role="combobox"
+      id="dropdown-{{ key }}">
+      <div class="header__dropdown__wrapper">
+        <div class="header__dropdown__inner">
+          {%- if grandparent -%}
+            {%- unless images_only -%}
+              <div class="header__grandparent__links{% if settings.nav_caps_megamenu %} caps{% endif %}">
+                {%- if link.levels == 2 -%}
+                  {%- for link in link.links -%}
+                    {%- capture link_image_markup -%}
+                      {%- render 'header-link-image' with enable: section.settings.show_images, link: link, aspect_ratio: section.settings.image_aspect_ratio -%}
+                    {%- endcapture -%}
 
+                    <div class="dropdown__family">
+                      {%- assign link_title = link.title | strip_html | escape -%}
+                      {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+                      <a href="{{ link.url }}" class="navlink navlink--child{{ link_hover_dot_class }}{% if link_image_markup != blank %} navlink--image hover-scale{% endif %}{% if link.active %} navlink--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+                        {{- link_image_markup -}}
+                        <span class="navtext">{{ link_title }}</span>
+                        {%- if enable_custom_badge and custom_badge_text != blank and highlight_item == link_title_lowercase -%}
+                          <span class="navtext__custom-badge">{{ custom_badge_text }}</span>
+                        {%- endif -%}
+                      </a>
+                      {%- for link in link.links -%}
+                        {%- assign link_title = link.title | strip_html | escape -%}
+                        {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+                        <a href="{{ link.url }}" class="navlink navlink--grandchild{% if link.active %} navlink--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+                          <span class="navtext">
+                            {{- link_title -}}
+                            {%- if enable_custom_badge and custom_badge_text != blank and highlight_item == link_title_lowercase -%}
+                              <span class="navtext__custom-badge">{{ custom_badge_text }}</span>
+                            {%- endif -%}
+                          </span>
+                        </a>
+                      {%- endfor -%}
+                    </div>
+                  {%- endfor -%}
+                {%- elsif link.levels == 1 -%}
+                  <div class="dropdown__family">
+                    {%- for link in link.links -%}
+                      {%- assign link_title = link.title | strip_html | escape -%}
+                      {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+                      <a href="{{ link.url }}" data-stagger class="navlink navlink--grandchild{% if link.active %} navlink--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+                        <span class="navtext">
+                          {{- link_title -}}
+                          {%- if enable_custom_badge and custom_badge_text != blank and highlight_item == link_title_lowercase -%}
+                            <span class="navtext__custom-badge">{{ custom_badge_text }}</span>
+                          {%- endif -%}
+                        </span>
+                      </a>
+                    {%- endfor %}
+                  </div>
+                {%- endif %}
+              </div>
+            {%- endunless -%}
+
+            {%- for block in section.blocks -%}
+              {%- assign image_second_menu = block.settings.image_second_menu -%}
+              {% comment %} Render block content {% endcomment %}
+              {%- if block.settings.position == index and nav_secondary == image_second_menu -%}
+                {%- render 'header-block', block: block, child_count: child_count, image_count: image_count, index: index -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+          {%- else -%}
+            {% comment %} Simple dropdown {% endcomment %}
+            {%- for link in link.links -%}
+              {%- assign link_title = link.title | strip_html | escape -%}
+              {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+              <a href="{{ link.url }}" data-stagger class="navlink navlink--child{% if link.active %} navlink--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}{% if settings.nav_caps_megamenu %} caps{% endif %}">
+                <span class="navtext">
+                  {{- link_title -}}
+                  {%- if enable_custom_badge and custom_badge_text != blank and highlight_item == link_title_lowercase -%}
+                    <span class="navtext__custom-badge">{{ custom_badge_text }}</span>
+                  {%- endif -%}
+                </span>
+              </a>
+            {%- endfor -%}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dropdownTriggers = document.querySelectorAll('[data-click-disclosure-toggle]');
+
+    dropdownTriggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdown-' + event.target.getAttribute('data-click-disclosure-toggle').split('-')[1]);
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+        
+        // Toggle aria-expanded and dropdown visibility
+        trigger.setAttribute('aria-expanded', !isExpanded);
+        dropdown.style.display = isExpanded ? 'none' : 'block';
+      });
+    });
+  });
+</script>
