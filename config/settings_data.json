@@ -536,7 +536,8 @@
       "predictive-search__product-title {display: none;}",
       ".predictive-search__product-image {position: relative; width: 100% !important; max-width: 100% !important; /* flex: 0 0 var(--image-size); */ height: 500px !important;}",
       ".predictive-search__product-title {display: none;}",
-      ".predictive-search__product-image figure {position: absolute; top: 0; left: 0; width: max-content; height: 100%; image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality;}"
+      ".predictive-search__product-image figure {position: absolute; top: 0; left: 0; width: max-content; height: 100%; image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality;}",
+      ".predictive-search__list{display: flex ; flex-direction: row; flex-wrap: wrap;}"
     ]
   }
 }
