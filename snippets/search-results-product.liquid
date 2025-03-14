@@ -15,12 +15,8 @@
   assign focusable = focusable | default: false
 -%}
 
-<a href="{{ product.url }}"
-  class="predictive-search__product{{ additional_classes }}"
-  aria-label="{{ product.title | strip_html | escape }}"
-  {% unless focusable %} tabindex="-1"{% endunless %}
->
-  <div class="predictive-search__product-image">
+
+  <div class="predictive-search__product-image" href="{{ product.url }}>
     {%- render 'image',
       image: featured_image,
       width: render_image_width,
