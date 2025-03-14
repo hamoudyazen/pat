@@ -186,18 +186,30 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-  // Add event listener to all links with the data-dropdown-toggle attribute
-  const dropdownLinks = document.querySelectorAll('[data-dropdown-toggle="true"]');
-  
-  dropdownLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent navigation
-      const dropdown = link.nextElementSibling; // Get the dropdown associated with the link
-      if (dropdown && dropdown.classList.contains('header__dropdown')) {
-        // Toggle the visibility of the dropdown
-        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-      }
+    // Add event listener to all links with the data-dropdown-toggle attribute
+    const dropdownLinks = document.querySelectorAll('[data-dropdown-toggle="true"]');
+    
+    dropdownLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent navigation
+        const dropdown = link.nextElementSibling; // Get the dropdown associated with the link
+        if (dropdown && dropdown.classList.contains('header__dropdown')) {
+          // Toggle a class to handle the dropdown visibility
+          dropdown.classList.toggle('is-visible');
+        }
+      });
     });
   });
-});
 </script>
+
+<style>
+  .header__dropdown {
+  display: none;
+}
+
+.header__dropdown.is-visible {
+  display: block;
+}
+
+</style>
+
