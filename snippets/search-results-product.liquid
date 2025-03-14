@@ -18,6 +18,7 @@
 
   <div class="predictive-search__product-image" href="{{ product.url }}>
     {%- render 'image',
+       href="{{ product.url }}
       image: featured_image,
       width: render_image_width,
       widths: image_widths,
@@ -27,7 +28,5 @@
       preload: true -%}
   </div>
 
-  <p class="predictive-search__product-title">
-    {{ product.title | strip_html }}
-  </p>
-</a>
+
+
