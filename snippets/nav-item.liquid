@@ -89,8 +89,8 @@
   {% else %}
     data-hover-disclosure-toggle
   {% endif %}>
-  <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel{{ link_hover_dot_class }}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}{% if settings.nav_caps_toplevel %} caps{% endif %}" 
-     {% if expands %} data-dropdown-toggle="true" {% endif %}>
+<a href="{{ link.url }}" class="navlink navlink--toplevel{{ link_hover_dot_class }}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}{% if settings.nav_caps_toplevel %} caps{% endif %} no-hover" 
+   {% if expands %} data-dropdown-toggle="true" {% endif %}>
     <span class="navtext">{{ link_title }}</span>
     {%- if enable_custom_badge and custom_badge_text != blank and highlight_item == link_title_lowercase -%}
       <span class="navtext__custom-badge">{{ custom_badge_text }}</span>
@@ -203,5 +203,10 @@
 
 </script>
 <style>
-  
+  .no-hover:hover {
+  pointer-events: none; /* Disables hover interactions */
+  background-color: transparent !important; /* Remove any background color on hover */
+  color: inherit !important; /* Maintain original text color */
+}
+
 </style>
