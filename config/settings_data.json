@@ -539,8 +539,8 @@
       ".predictive-search__product-image figure {position: absolute; top: 0; left: 0; width: max-content; height: 70% !important; image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: high-quality;}",
       ".predictive-search__list {display: flex; flex-direction: row; flex-wrap: wrap;}",
       ".predictive-search__product {width: 25% !important; max-width: 25% !important; display: inline-block; /* or flex depending on your layout */ box-sizing: border-box; padding: 10px; /* Adjust as needed */}",
-      ".predictive-search__product {width: 25% !important ;}",
-      ".predictive-search__item:last-child {display: none;}"
+      ".predictive-search__item:last-child {display: none;}",
+      "@media (max-width: 768px) {.predictive-search__item {width: 50%; }}"
     ]
   }
 }
