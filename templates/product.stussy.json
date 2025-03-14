@@ -22,25 +22,11 @@
             "padding_bottom": 20
           }
         },
-        "divider_6CtT4j": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "padding_bottom": 20
-          }
-        },
         "text_QTkQXd": {
           "type": "text",
           "settings": {
             "title": "<p>Free shipping in US for orders over $200 USD. Exclusions apply.</p>",
             "text_alignment": "left",
-            "padding_bottom": 20
-          }
-        },
-        "divider_hT8iHi": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
             "padding_bottom": 20
           }
         },
@@ -54,13 +40,6 @@
             "show_payment_button": false,
             "enable_subscriptions_selectors": true,
             "padding_bottom": 0
-          }
-        },
-        "divider_W8iTbJ": {
-          "type": "divider",
-          "settings": {
-            "show_line": true,
-            "padding_bottom": 10
           }
         },
         "product_accordion_KnJcY6": {
@@ -128,11 +107,8 @@
       },
       "block_order": [
         "title",
-        "divider_6CtT4j",
         "text_QTkQXd",
-        "divider_hT8iHi",
         "form",
-        "divider_W8iTbJ",
         "product_accordion_KnJcY6",
         "product_accordion_TbR9NT",
         "product_accordion_BptqhB",
@@ -142,7 +118,7 @@
       ],
       "custom_css": [
         ".hidden {display: none !important;}",
-        ".product__block{border-bottom:1px solid red;}"
+        ".product__block {border-bottom: 1px solid red;}"
       ],
       "settings": {
         "product_sticky_enable": true,
