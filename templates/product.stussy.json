@@ -47,7 +47,7 @@
         "form": {
           "type": "form",
           "settings": {
-            "hide_variant_buttons": true,
+            "hide_variant_buttons": false,
             "hide_variants": false,
             "show_labels": false,
             "show_quantity": false,
@@ -117,7 +117,7 @@
           "type": "form",
           "settings": {
             "hide_variant_buttons": true,
-            "hide_variants": true,
+            "hide_variants": false,
             "show_labels": false,
             "show_quantity": false,
             "show_payment_button": true,
