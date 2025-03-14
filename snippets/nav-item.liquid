@@ -33,7 +33,7 @@
   endfor
 
   if parent or grandparent
-    assign expands = true
+    assign expands = false
     assign key = link.url | append: link.title | append: link.levels | md5
   endif
 
