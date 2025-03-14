@@ -88,6 +88,7 @@
     "arrow_style": "arrow",
     "show_rounded_corners": false,
     "increase_border_radius": false,
+    "show_text_shadow": true,
     "mobile_menu_behaviour": "link",
     "animations_enabled": true,
     "show_sale_badge": false,
