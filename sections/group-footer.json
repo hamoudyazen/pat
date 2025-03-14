@@ -13,7 +13,6 @@
   "sections": {
     "footer": {
       "type": "footer",
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "show_footer_wave": false,
