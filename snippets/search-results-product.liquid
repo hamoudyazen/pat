@@ -5,8 +5,9 @@
     width: 90%;
     height: 90%;
     min-height: 90%;
-}
+  }
 </style>
+
 {%- liquid
   assign featured_image = product.featured_media.preview_image
   assign render_image_width = 600
@@ -15,18 +16,13 @@
   assign focusable = focusable | default: false
 -%}
 
-
-  <div class="predictive-search__product-image" href="{{ product.url }}>
-    {%- render 'image',
-       href="{{ product.url }}
-      image: featured_image,
-      width: render_image_width,
-      widths: image_widths,
-      sizes: '100vw',
-      cover: true,
-      placeholder_svg: 'product-apparel-1',
-      preload: true -%}
-  </div>
-
-
-
+<a href="{{ product.url }}" class="predictive-search__product-image">
+  {%- render 'image',
+    image: featured_image,
+    width: render_image_width,
+    widths: image_widths,
+    sizes: '100vw',
+    cover: true,
+    placeholder_svg: 'product-apparel-1',
+    preload: true -%}
+</a>
