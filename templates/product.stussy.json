@@ -122,7 +122,7 @@
         ".section-padding {padding: 0px !important;}",
         ".wrapper {width: 100%; max-width: 100%; margin: 0px !important; padding: 10px !important;}",
         "@media only screen and (min-width: 768px) {.product-single__details .form__wrapper {max-width: 90%; margin: 0 auto; }}",
-        ".product-single__details {padding-left: 50px; padding-right: 50px; padding-right: 50px;}"
+        ".product-single__details {padding-left: 50px !important; padding-right: 50px !important; padding-top: 50px !important;}"
       ],
       "settings": {
         "product_sticky_enable": true,
