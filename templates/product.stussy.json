@@ -9,6 +9,82 @@
  */
 {
   "sections": {
+    "section_product_VVjbPH": {
+      "type": "section-product",
+      "blocks": {
+        "title_9QqhE9": {
+          "type": "title",
+          "settings": {
+            "subheading": "none",
+            "title_size": 100,
+            "price_size": 100,
+            "bold_price": false,
+            "padding_bottom": 20
+          }
+        },
+        "form_WtmFPD": {
+          "type": "form",
+          "settings": {
+            "info_page": "",
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": true,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "description_TdpCd3": {
+          "type": "description",
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "icon_row_y3mDVC": {
+          "type": "icon_row",
+          "settings": {
+            "icon_name_1": "truck",
+            "icon_color_1": "",
+            "icon_width_1": 20,
+            "icon_text_1": "Free shipping",
+            "icon_name_2": "check",
+            "icon_color_2": "",
+            "icon_width_2": 20,
+            "icon_text_2": "Free Returns",
+            "icon_name_3": "heart",
+            "icon_color_3": "",
+            "icon_width_3": 20,
+            "icon_text_3": "1% Donated Annually",
+            "icon_name_4": "clock",
+            "icon_color_4": "",
+            "icon_width_4": 20,
+            "icon_text_4": "Feature",
+            "alignment": "center",
+            "bg_color": "#ffffff",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title_9QqhE9",
+        "form_WtmFPD",
+        "description_TdpCd3",
+        "icon_row_y3mDVC"
+      ],
+      "settings": {
+        "product": "λrchivi-double-sleeve-tee",
+        "product_sticky_enable": true,
+        "image_layout": "stacked",
+        "image_width": "standard",
+        "hide_product_thumbnails": false,
+        "product_image_aspect_ratio": false,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "bg_color_secondary": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "main": {
       "type": "product",
       "blocks": {
@@ -173,6 +249,7 @@
     }
   },
   "order": [
+    "section_product_VVjbPH",
     "main",
     "related"
   ]
