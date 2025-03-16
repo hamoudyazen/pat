@@ -9,78 +9,39 @@
  */
 {
   "sections": {
-    "section_product_VVjbPH": {
-      "type": "section-product",
+    "product_3gCrgX": {
+      "type": "product",
       "blocks": {
-        "title_9QqhE9": {
+        "title_Kn8W7h": {
           "type": "title",
           "settings": {
-            "subheading": "none",
+            "subheading": "breadcrumbs",
             "title_size": 100,
             "price_size": 100,
             "bold_price": false,
             "padding_bottom": 20
           }
         },
-        "form_WtmFPD": {
-          "type": "form",
-          "settings": {
-            "info_page": "",
-            "show_labels": true,
-            "show_quantity": false,
-            "show_payment_button": true,
-            "enable_subscriptions_selectors": true,
-            "padding_bottom": 20
-          }
-        },
-        "description_TdpCd3": {
+        "description_U4z3jN": {
           "type": "description",
           "settings": {
-            "padding_bottom": 20
-          }
-        },
-        "icon_row_y3mDVC": {
-          "type": "icon_row",
-          "settings": {
-            "icon_name_1": "truck",
-            "icon_color_1": "",
-            "icon_width_1": 20,
-            "icon_text_1": "Free shipping",
-            "icon_name_2": "check",
-            "icon_color_2": "",
-            "icon_width_2": 20,
-            "icon_text_2": "Free Returns",
-            "icon_name_3": "heart",
-            "icon_color_3": "",
-            "icon_width_3": 20,
-            "icon_text_3": "1% Donated Annually",
-            "icon_name_4": "clock",
-            "icon_color_4": "",
-            "icon_width_4": 20,
-            "icon_text_4": "Feature",
-            "alignment": "center",
-            "bg_color": "#ffffff",
             "padding_bottom": 20
           }
         }
       },
       "block_order": [
-        "title_9QqhE9",
-        "form_WtmFPD",
-        "description_TdpCd3",
-        "icon_row_y3mDVC"
+        "title_Kn8W7h",
+        "description_U4z3jN"
       ],
       "settings": {
-        "product": "λrchivi-double-sleeve-tee",
-        "product_sticky_enable": true,
+        "product_sticky_enable": false,
         "image_layout": "stacked",
         "image_width": "standard",
-        "hide_product_thumbnails": false,
         "product_image_aspect_ratio": false,
         "enable_zoom": true,
         "enable_video_looping": false,
-        "bg_color_secondary": false,
-        "width": "wrapper--full-padded",
+        "bg_color": "",
+        "width": "wrapper",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -192,6 +153,7 @@
         "product_accordion_eLYr4W",
         "form_QHnpEw"
       ],
+      "disabled": true,
       "custom_css": [
         ".hidden {display: none !important;}",
         ".product__block {border-bottom: 1px solid #f5f5f5 !important; padding-top: 20px; padding-bottom: 20px;}",
@@ -249,7 +211,7 @@
     }
   },
   "order": [
-    "section_product_VVjbPH",
+    "product_3gCrgX",
     "main",
     "related"
   ]
