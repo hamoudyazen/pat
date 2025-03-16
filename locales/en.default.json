@@ -171,7 +171,7 @@
   },
   "cart": {
     "general": {
-      "title": "Cart",
+      "title": "Bag",
       "remove": "Remove",
       "note": "Add a note for recipient",
       "discount_label": "You're saving {{ amount }} with {{ title }}",
