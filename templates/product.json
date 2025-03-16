@@ -47,6 +47,8 @@
         "form": {
           "type": "form",
           "settings": {
+            "hide_variant_buttons": false,
+            "hide_variants": false,
             "show_labels": false,
             "show_quantity": false,
             "show_payment_button": true,
@@ -126,7 +128,7 @@
         "product_accordion_eLYr4W"
       ],
       "settings": {
-        "product_sticky_enable": false,
+        "product_sticky_enable": true,
         "image_layout": "stacked",
         "image_width": "standard",
         "product_image_aspect_ratio": true,
