@@ -16,9 +16,8 @@
           "type": "title",
           "settings": {
             "subheading": "none",
-            "title_size": 100,
-            "price_size": 100,
-            "bold_price": false,
+            "show_rating": true,
+            "show_rating_count": false,
             "padding_bottom": 20
           }
         },
@@ -47,8 +46,8 @@
         "form": {
           "type": "form",
           "settings": {
-            "hide_variant_buttons": false,
-            "hide_variants": false,
+            "info_page": "",
+            "info_page_title_override": "",
             "show_labels": false,
             "show_quantity": false,
             "show_payment_button": true,
@@ -62,56 +61,6 @@
             "show_line": true,
             "padding_bottom": 10
           }
-        },
-        "product_accordion_KnJcY6": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "Details",
-            "heading_style": "font-body",
-            "accordion_text": "{{ product.description }}",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
-        },
-        "product_accordion_TbR9NT": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "SIZE GUIDE",
-            "heading_style": "font-body",
-            "accordion_text": "{{ product.description }}",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
-        },
-        "product_accordion_BptqhB": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "SHIPPING & RETURNS",
-            "heading_style": "font-body",
-            "accordion_text": "{{ product.description }}",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
-        },
-        "product_accordion_hLU6te": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "STYLED WITH",
-            "heading_style": "font-body",
-            "accordion_text": "{{ product.description }}",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
-        },
-        "product_accordion_eLYr4W": {
-          "type": "product_accordion",
-          "settings": {
-            "accordion_heading": "CHAT",
-            "heading_style": "font-body",
-            "accordion_text": "<p>{{ product.description }}</p>",
-            "accordion_page": "",
-            "padding_bottom": 20
-          }
         }
       },
       "block_order": [
@@ -120,18 +69,12 @@
         "text_QTkQXd",
         "divider_hT8iHi",
         "form",
-        "divider_W8iTbJ",
-        "product_accordion_KnJcY6",
-        "product_accordion_TbR9NT",
-        "product_accordion_BptqhB",
-        "product_accordion_hLU6te",
-        "product_accordion_eLYr4W"
+        "divider_W8iTbJ"
       ],
       "settings": {
         "product_sticky_enable": true,
-        "image_layout": "carousel",
+        "image_layout": "stacked",
         "image_width": "standard",
-        "product_image_aspect_ratio": true,
         "enable_zoom": false,
         "enable_video_looping": false,
         "bg_color": "",
