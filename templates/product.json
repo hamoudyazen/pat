@@ -129,7 +129,7 @@
       ],
       "settings": {
         "product_sticky_enable": true,
-        "image_layout": "stacked",
+        "image_layout": "carousel",
         "image_width": "standard",
         "product_image_aspect_ratio": true,
         "enable_zoom": false,
