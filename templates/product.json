@@ -105,7 +105,6 @@
         "related",
         "recent"
       ],
-      "disabled": true,
       "settings": {
         "enable_tabs": true,
         "columns_mobile": "1",
